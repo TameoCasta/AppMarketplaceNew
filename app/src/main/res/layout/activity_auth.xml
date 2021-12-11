@@ -2,14 +2,30 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
     android:background="#EDC3C1"
     android:backgroundcolor="primario"
     android:visibility="visible"
-    tools:context=".authActivity">
+    tools:context=".authActivity"
+    tools:visibility="visible">
 
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            app:srcCompat="@drawable/logo_topdev" />
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="0dp"
@@ -25,15 +41,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#E31616"
+            android:fontFamily="casual"
+            android:text="Marketplace New"
+            android:textAlignment="center"
+            android:textColor="@color/background" />
+
         <EditText
             android:id="@+id/emailEditText"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/terciario"
             android:ems="10"
+            android:fontFamily="casual"
             android:hint="Email"
             android:inputType="textEmailAddress"
-            android:textColor="#050505" />
+            android:textColor="@color/background" />
 
         <Space
             android:layout_width="match_parent"
@@ -47,9 +74,10 @@
             android:layout_height="wrap_content"
             android:background="@color/terciario"
             android:ems="10"
+            android:fontFamily="casual"
             android:hint="Contraseña"
             android:inputType="textPassword"
-            android:textColor="#000000" />
+            android:textColor="@color/background" />
 
         <Space
             android:layout_width="match_parent"
@@ -67,8 +95,10 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@color/primario"
+                android:fontFamily="casual"
                 android:text="Registrar"
-                android:textColor="#000000" />
+                android:textColor="@color/background"
+                app:cornerRadius="30dp" />
 
             <Space
                 android:layout_width="8dp"
@@ -81,8 +111,10 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@color/secundario"
+                android:fontFamily="casual"
                 android:text="Acceder"
-                android:textColor="#000000" />
+                android:textColor="@color/background"
+                app:cornerRadius="30dp" />
         </LinearLayout>
     </LinearLayout>
 
