@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primario">#F00C01</color>
+    <color name="secundario">#BD0900</color>
+    <color name="terciario">#F25149</color>
+    <color name="oscuroprimario">#700600</color>
+    <color name="secundarioprimario">#702622</color>
+    <color name="background">#EDC3C1</color>
+
+</resources>
